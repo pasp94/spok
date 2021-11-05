@@ -55,10 +55,10 @@
 		BC6FCF012735AC1700331611 /* Spok */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8FDEB2735D6A500756D53 /* Resources */,
+				BCB8FDEA2735D62400756D53 /* Scenes */,
 				BCB8FDE42735D04700756D53 /* Network */,
 				BC6FCF022735AC1700331611 /* SpokApp.swift */,
-				BC6FCF042735AC1700331611 /* ContentView.swift */,
-				BC6FCF062735AC1B00331611 /* Assets.xcassets */,
 				BC6FCF082735AC1B00331611 /* Preview Content */,
 			);
 			path = Spok;
@@ -87,6 +87,54 @@
 				BCB8FDE62735D0C000756D53 /* Reminder.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BCB8FDEA2735D62400756D53 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FDED2735D70600756D53 /* Calendar */,
+				BCB8FDEC2735D6FE00756D53 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BCB8FDEB2735D6A500756D53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC6FCF062735AC1B00331611 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCB8FDEC2735D6FE00756D53 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FDEF2735D73900756D53 /* Views */,
+				BC6FCF042735AC1700331611 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BCB8FDED2735D70600756D53 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FDEE2735D73600756D53 /* Views */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		BCB8FDEE2735D73600756D53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCB8FDEF2735D73900756D53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
