@@ -11,6 +11,8 @@
 		BC6FCF052735AC1700331611 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6FCF042735AC1700331611 /* ContentView.swift */; };
 		BC6FCF072735AC1B00331611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6FCF062735AC1B00331611 /* Assets.xcassets */; };
 		BC6FCF0A2735AC1B00331611 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6FCF092735AC1B00331611 /* Preview Assets.xcassets */; };
+		BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE62735D0C000756D53 /* Reminder.swift */; };
+		BCB8FDE92735D32100756D53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE82735D32100756D53 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		BC6FCF042735AC1700331611 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC6FCF062735AC1B00331611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC6FCF092735AC1B00331611 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCB8FDE62735D0C000756D53 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		BCB8FDE82735D32100756D53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		BC6FCF012735AC1700331611 /* Spok */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8FDE42735D04700756D53 /* Network */,
 				BC6FCF022735AC1700331611 /* SpokApp.swift */,
 				BC6FCF042735AC1700331611 /* ContentView.swift */,
 				BC6FCF062735AC1B00331611 /* Assets.xcassets */,
@@ -65,6 +70,23 @@
 				BC6FCF092735AC1B00331611 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCB8FDE42735D04700756D53 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FDE52735D05100756D53 /* Models */,
+				BCB8FDE82735D32100756D53 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCB8FDE52735D05100756D53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FDE62735D0C000756D53 /* Reminder.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */,
 				BC6FCF052735AC1700331611 /* ContentView.swift in Sources */,
+				BCB8FDE92735D32100756D53 /* Network.swift in Sources */,
 				BC6FCF032735AC1700331611 /* SpokApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
