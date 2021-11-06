@@ -14,6 +14,9 @@
 		BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE62735D0C000756D53 /* Reminder.swift */; };
 		BCB8FDE92735D32100756D53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE82735D32100756D53 /* Network.swift */; };
 		BCB8FDF227368B7900756D53 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDF127368B7900756D53 /* CounterView.swift */; };
+		EF208E782735DA4A0002460D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E772735DA4A0002460D /* CalendarView.swift */; };
+		EF208E7B2735EC250002460D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7A2735EC250002460D /* WeekView.swift */; };
+		EF208E7F2736DB470002460D /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7E2736DB470002460D /* ReminderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		BCB8FDE62735D0C000756D53 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		BCB8FDE82735D32100756D53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		BCB8FDF127368B7900756D53 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		EF208E772735DA4A0002460D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		EF208E7A2735EC250002460D /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		EF208E7E2736DB470002460D /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +63,11 @@
 		BC6FCF012735AC1700331611 /* Spok */ = {
 			isa = PBXGroup;
 			children = (
+				BC6FCF022735AC1700331611 /* SpokApp.swift */,
+				BCB8FDE42735D04700756D53 /* Network */,
+				BC6FCF082735AC1B00331611 /* Preview Content */,
 				BCB8FDEB2735D6A500756D53 /* Resources */,
 				BCB8FDEA2735D62400756D53 /* Scenes */,
-				BCB8FDE42735D04700756D53 /* Network */,
-				BC6FCF022735AC1700331611 /* SpokApp.swift */,
-				BC6FCF082735AC1B00331611 /* Preview Content */,
 			);
 			path = Spok;
 			sourceTree = "<group>";
@@ -94,7 +100,7 @@
 		BCB8FDEA2735D62400756D53 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BCB8FDED2735D70600756D53 /* Calendar */,
+				EF208E762735D93C0002460D /* Calendar */,
 				BCB8FDEC2735D6FE00756D53 /* Main */,
 			);
 			path = Scenes;
@@ -117,25 +123,28 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		BCB8FDED2735D70600756D53 /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				BCB8FDEE2735D73600756D53 /* Views */,
-			);
-			path = Calendar;
-			sourceTree = "<group>";
-		};
-		BCB8FDEE2735D73600756D53 /* Views */ = {
+		BCB8FDEF2735D73900756D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BCB8FDEF2735D73900756D53 /* Views */ = {
+		EF208E762735D93C0002460D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				EF208E792735DC350002460D /* Views */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		EF208E792735DC350002460D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				BCB8FDF0273689CB00756D53 /* Counter */,
+				EF208E772735DA4A0002460D /* CalendarView.swift */,
+				EF208E7A2735EC250002460D /* WeekView.swift */,
+				EF208E7E2736DB470002460D /* ReminderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,9 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF208E7B2735EC250002460D /* WeekView.swift in Sources */,
+				EF208E782735DA4A0002460D /* CalendarView.swift in Sources */,
 				BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */,
 				BC6FCF052735AC1700331611 /* ContentView.swift in Sources */,
 				BCB8FDE92735D32100756D53 /* Network.swift in Sources */,
+				EF208E7F2736DB470002460D /* ReminderView.swift in Sources */,
 				BC6FCF032735AC1700331611 /* SpokApp.swift in Sources */,
 				BCB8FDF227368B7900756D53 /* CounterView.swift in Sources */,
 			);
