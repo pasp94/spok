@@ -13,6 +13,7 @@
 		BC6FCF0A2735AC1B00331611 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6FCF092735AC1B00331611 /* Preview Assets.xcassets */; };
 		BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE62735D0C000756D53 /* Reminder.swift */; };
 		BCB8FDE92735D32100756D53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE82735D32100756D53 /* Network.swift */; };
+		BCB8FDF227368B7900756D53 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDF127368B7900756D53 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BC6FCF092735AC1B00331611 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCB8FDE62735D0C000756D53 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		BCB8FDE82735D32100756D53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BCB8FDF127368B7900756D53 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +135,17 @@
 		BCB8FDEF2735D73900756D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8FDF0273689CB00756D53 /* Counter */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BCB8FDF0273689CB00756D53 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FDF127368B7900756D53 /* CounterView.swift */,
+			);
+			path = Counter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				BC6FCF052735AC1700331611 /* ContentView.swift in Sources */,
 				BCB8FDE92735D32100756D53 /* Network.swift in Sources */,
 				BC6FCF032735AC1700331611 /* SpokApp.swift in Sources */,
+				BCB8FDF227368B7900756D53 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
