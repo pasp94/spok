@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct WeekView: View {
+    @Binding var selectedWeekDayIndex: Int
     let days: [WeekDay]
-
-    @State private var selectedWeekDayIndex: Int = 0
-    private let layout: [GridItem] = [GridItem(.flexible())]
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: layout, spacing: 20) {
+            LazyHGrid(rows: [GridItem(.flexible())], spacing: 20) {
                 ForEach(0..<days.count, id:\.self) { index in
                     let day = days[index]
-                    DayView(selected: selectedWeekDayIndex == index, number: day.number, day: day.shortName)
+                    DayView(
+                        selected: selectedWeekDayIndex == index,
+                        number: day.number,
+                        day: day.shortName
+                    )
                         .onTapGesture {
                             selectedWeekDayIndex = index
                         }
@@ -29,12 +31,13 @@ struct WeekView: View {
     }
 }
 
-struct WeekView_Previews: PreviewProvider {
-    static var previews: some View {
-        WeekView(days: DAYS)
-            .previewLayout(.sizeThatFits)
-    }
-}
+//struct WeekView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        WeekView(days: DAYS, selectedDayIndex: .constant(0))
+//            .previewLayout(.sizeThatFits)
+//    }
+//}
+
 
 struct DayView: View {
     var selected: Bool
