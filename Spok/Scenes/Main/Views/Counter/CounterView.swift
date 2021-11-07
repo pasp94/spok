@@ -32,7 +32,7 @@ struct CounterView: View {
             }
         }
         .padding(20)
-        .aspectRatio(1, contentMode: .fit)
+        .aspectRatio(1, contentMode: .fill)
         .background(Color.yellow)
         .cornerRadius(20)
     }

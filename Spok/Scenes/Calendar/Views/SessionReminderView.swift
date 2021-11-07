@@ -17,9 +17,10 @@ struct SessionReminderView: View {
             Image(icon)
                 .frame(width: 40, height: 40)
             Text(title)
-                .fontWeight(.medium)
                 .font(.system(size: 16))
+                .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(Color.Primary.normal)
         }
         .fixedSize(horizontal: false, vertical: false)
         .padding(.vertical, 24)

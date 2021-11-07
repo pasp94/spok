@@ -31,12 +31,15 @@ struct WeekView: View {
     }
 }
 
-//struct WeekView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        WeekView(days: DAYS, selectedDayIndex: .constant(0))
-//            .previewLayout(.sizeThatFits)
-//    }
-//}
+struct WeekView_Previews: PreviewProvider {
+    static var previews: some View {
+        WeekView(
+            selectedWeekDayIndex: .constant(0),
+            days: DAYS
+        )
+            .previewLayout(.sizeThatFits)
+    }
+}
 
 
 struct DayView: View {
@@ -61,6 +64,7 @@ struct DayView: View {
         }
         .padding(.vertical, 30)
         .padding(.horizontal, 18)
+        .aspectRatio(65/120, contentMode: .fill)
         .background(backgroundColor)
         .cornerRadius(.infinity)
         .shadow(color: shadowColor, radius: 10)

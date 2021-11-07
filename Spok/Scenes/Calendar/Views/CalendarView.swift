@@ -9,20 +9,20 @@ import SwiftUI
 
 struct CalendarView: View {
 
-    private let days = DAYS
+    private let days = CalendarHelper.daysOfCurrentWeek
     private lazy var reminders: [[Reminder]] =  days.map { _ in
         Network.getReminders()
     }
 
-    @State var selectedDayIndex: Int = 0
+    @State var selectedDayIndex: Int = CalendarHelper.currentDayIndex
 
     var body: some View {
         var mutableSelf = self
 
         GeometryReader { geometry in
-            ScrollView(.vertical) {
+            ScrollView(.vertical, showsIndicators: false) {
                 WeekView(selectedWeekDayIndex: $selectedDayIndex, days: days)
-                    .frame(height: geometry.size.height * 0.25)
+                    .frame(height: geometry.size.height * 0.30)
                 DailyRemindersView(reminders: mutableSelf.reminders[selectedDayIndex])
             }
         }
