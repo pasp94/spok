@@ -14,32 +14,32 @@ struct CalendarView: View {
         Network.getReminders()
     }
 
-    @State var selectedDay: WeekDay?
+//    @State var selectedDay: WeekDay?
 
     var body: some View {
-        NavigationView {
-            GeometryReader { geometry in
-                ScrollView(.vertical) {
-                    WeekView(days: days)
-                        .frame(height: geometry.size.height * 0.25)
-                    DailyRemindersView(reminders: Network.getReminders())
-                }
+        GeometryReader { geometry in
+            ScrollView(.vertical) {
+                WeekView(days: days)
+                    .frame(height: geometry.size.height * 0.25)
+                DailyRemindersView(reminders: Network.getReminders())
             }
-            .navigationTitle(
-                Text("Questa settimana")
-            )
         }
+        .navigationTitle(
+            Text("Questa settimana")
+        )
+        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarTitleDisplayMode(.inline)
     }
 
-    var remindersForSelectedDay: [Reminder] {
-        var mutableSelf = self
-        guard let selectedDay = selectedDay,
-              let index = days.firstIndex(of: selectedDay)
-        else {
-            return []
-        }
-        return mutableSelf.reminders[index]
-    }
+//    var remindersForSelectedDay: [Reminder] {
+//        var mutableSelf = self
+//        guard let selectedDay = selectedDay,
+//              let index = days.firstIndex(of: selectedDay)
+//        else {
+//            return []
+//        }
+//        return mutableSelf.reminders[index]
+//    }
 }
 
 struct CalendarView_Previews: PreviewProvider {

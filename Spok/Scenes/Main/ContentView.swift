@@ -15,14 +15,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
-                ScrollView(.vertical) {
+                ScrollView(.vertical, showsIndicators: false) {
                     ExerciseHList()
-                        .frame(height: geometry.size.height * 0.30)
-                        .padding(.leading, 20)
-                        
+                        .frame(height: geometry.size.height * 0.40)
                     DailyRemindersView(reminders: reminders)
                 }
-                .disabled(true)
             }
             .navigationTitle("Esercizi Spot")
             .navigationBarItems(

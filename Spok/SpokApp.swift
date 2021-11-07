@@ -11,7 +11,7 @@ import SwiftUI
 struct SpokApp: App {
     var body: some Scene {
         WindowGroup {
-            CalendarView()
+            ContentView()
         }
     }
 }

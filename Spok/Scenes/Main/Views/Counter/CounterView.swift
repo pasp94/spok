@@ -15,7 +15,7 @@ struct CounterView: View {
                 .padding(.vertical)
                 .frame(width: 50, height: 80)
                 .font(.system(size: 50))
-            HStack {
+            HStack(spacing: 50) {
                 VStack(alignment: .leading) {
                     Text("Spot")
                         .font(.title2)
@@ -26,14 +26,13 @@ struct CounterView: View {
                         .font(.caption)
                         .foregroundColor(Color.white)
                 }
-                Spacer()
                 Image(systemName: "arrow.forward.circle.fill")
                     .foregroundColor(Color.white)
                     .font(.title)
             }
         }
-        .padding(.horizontal, 20)
-        .frame(width: 150, height: 170)
+        .padding(20)
+        .aspectRatio(1, contentMode: .fit)
         .background(Color.yellow)
         .cornerRadius(20)
     }

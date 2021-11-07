@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ExerciseHList: View {
     var body: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: [GridItem(.flexible())], spacing: 20) {
                 CounterView()
                 CounterView()
             }
+            .padding(.leading, 20)
         }
     }
 }
