@@ -14,6 +14,15 @@
 		BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE62735D0C000756D53 /* Reminder.swift */; };
 		BCB8FDE92735D32100756D53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE82735D32100756D53 /* Network.swift */; };
 		BCB8FDF92737EBEC00756D53 /* ExerciseHList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDF82737EBEC00756D53 /* ExerciseHList.swift */; };
+		BCB8FE162738652300756D53 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB8FE00273863D400756D53 /* WidgetKit.framework */; };
+		BCB8FE172738652300756D53 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB8FE02273863D400756D53 /* SwiftUI.framework */; };
+		BCB8FE1A2738652300756D53 /* SpokWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FE192738652300756D53 /* SpokWidget.swift */; };
+		BCB8FE1C2738652500756D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB8FE1B2738652500756D53 /* Assets.xcassets */; };
+		BCB8FE202738652500756D53 /* SpokWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCB8FE152738652300756D53 /* SpokWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCB8FE2427386FA200756D53 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8A2737E7AD0002460D /* WeekDay.swift */; };
+		BCB8FE252738702500756D53 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8C2738593F0002460D /* CalendarHelper.swift */; };
+		BCB8FE262738783B00756D53 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE62735D0C000756D53 /* Reminder.swift */; };
+		BCB8FE2727387A5C00756D53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE82735D32100756D53 /* Network.swift */; };
 		EF208E782735DA4A0002460D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E772735DA4A0002460D /* CalendarView.swift */; };
 		EF208E7B2735EC250002460D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7A2735EC250002460D /* WeekView.swift */; };
 		EF208E7F2736DB470002460D /* SpotReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7E2736DB470002460D /* SpotReminderView.swift */; };
@@ -24,6 +33,30 @@
 		EF208E8D2738593F0002460D /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8C2738593F0002460D /* CalendarHelper.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BCB8FE1E2738652500756D53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC6FCEF72735AC1700331611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB8FE142738652300756D53;
+			remoteInfo = SpokWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCB8FE0D273863D700756D53 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCB8FE202738652500756D53 /* SpokWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BC6FCEFF2735AC1700331611 /* Spok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6FCF022735AC1700331611 /* SpokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokApp.swift; sourceTree = "<group>"; };
@@ -33,6 +66,12 @@
 		BCB8FDE62735D0C000756D53 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		BCB8FDE82735D32100756D53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		BCB8FDF82737EBEC00756D53 /* ExerciseHList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseHList.swift; sourceTree = "<group>"; };
+		BCB8FE00273863D400756D53 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BCB8FE02273863D400756D53 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BCB8FE152738652300756D53 /* SpokWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpokWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB8FE192738652300756D53 /* SpokWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokWidget.swift; sourceTree = "<group>"; };
+		BCB8FE1B2738652500756D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCB8FE1D2738652500756D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF208E772735DA4A0002460D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		EF208E7A2735EC250002460D /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		EF208E7E2736DB470002460D /* SpotReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReminderView.swift; sourceTree = "<group>"; };
@@ -51,6 +90,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB8FE122738652300756D53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB8FE172738652300756D53 /* SwiftUI.framework in Frameworks */,
+				BCB8FE162738652300756D53 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				BC6FCF012735AC1700331611 /* Spok */,
+				BCB8FE182738652300756D53 /* SpokWidget */,
+				BCB8FDFF273863D400756D53 /* Frameworks */,
 				BC6FCF002735AC1700331611 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BC6FCEFF2735AC1700331611 /* Spok.app */,
+				BCB8FE152738652300756D53 /* SpokWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +203,25 @@
 			path = ExerciseHList;
 			sourceTree = "<group>";
 		};
+		BCB8FDFF273863D400756D53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FE00273863D400756D53 /* WidgetKit.framework */,
+				BCB8FE02273863D400756D53 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCB8FE182738652300756D53 /* SpokWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FE192738652300756D53 /* SpokWidget.swift */,
+				BCB8FE1B2738652500756D53 /* Assets.xcassets */,
+				BCB8FE1D2738652500756D53 /* Info.plist */,
+			);
+			path = SpokWidget;
+			sourceTree = "<group>";
+		};
 		EF208E762735D93C0002460D /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,15 +292,34 @@
 				BC6FCEFB2735AC1700331611 /* Sources */,
 				BC6FCEFC2735AC1700331611 /* Frameworks */,
 				BC6FCEFD2735AC1700331611 /* Resources */,
+				BCB8FE0D273863D700756D53 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCB8FE1F2738652500756D53 /* PBXTargetDependency */,
 			);
 			name = Spok;
 			productName = Spok;
 			productReference = BC6FCEFF2735AC1700331611 /* Spok.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BCB8FE142738652300756D53 /* SpokWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB8FE212738652500756D53 /* Build configuration list for PBXNativeTarget "SpokWidgetExtension" */;
+			buildPhases = (
+				BCB8FE112738652300756D53 /* Sources */,
+				BCB8FE122738652300756D53 /* Frameworks */,
+				BCB8FE132738652300756D53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpokWidgetExtension;
+			productName = SpokWidgetExtension;
+			productReference = BCB8FE152738652300756D53 /* SpokWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -239,11 +328,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					BC6FCEFE2735AC1700331611 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					BCB8FE142738652300756D53 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
@@ -261,6 +353,7 @@
 			projectRoot = "";
 			targets = (
 				BC6FCEFE2735AC1700331611 /* Spok */,
+				BCB8FE142738652300756D53 /* SpokWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +365,14 @@
 			files = (
 				BC6FCF0A2735AC1B00331611 /* Preview Assets.xcassets in Resources */,
 				BC6FCF072735AC1B00331611 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB8FE132738652300756D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB8FE1C2738652500756D53 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +399,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCB8FE112738652300756D53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB8FE2727387A5C00756D53 /* Network.swift in Sources */,
+				BCB8FE2427386FA200756D53 /* WeekDay.swift in Sources */,
+				BCB8FE252738702500756D53 /* CalendarHelper.swift in Sources */,
+				BCB8FE1A2738652300756D53 /* SpokWidget.swift in Sources */,
+				BCB8FE262738783B00756D53 /* Reminder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCB8FE1F2738652500756D53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB8FE142738652300756D53 /* SpokWidgetExtension */;
+			targetProxy = BCB8FE1E2738652500756D53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BC6FCF0B2735AC1B00331611 /* Debug */ = {
@@ -420,6 +541,7 @@
 		BC6FCF0E2735AC1B00331611 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +572,7 @@
 		BC6FCF0F2735AC1B00331611 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -477,6 +600,60 @@
 			};
 			name = Release;
 		};
+		BCB8FE222738652500756D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9QY6FPEFA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpokWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpokWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pezz8builders.Spok.SpokWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCB8FE232738652500756D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9QY6FPEFA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpokWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpokWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pezz8builders.Spok.SpokWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -494,6 +671,15 @@
 			buildConfigurations = (
 				BC6FCF0E2735AC1B00331611 /* Debug */,
 				BC6FCF0F2735AC1B00331611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB8FE212738652500756D53 /* Build configuration list for PBXNativeTarget "SpokWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB8FE222738652500756D53 /* Debug */,
+				BCB8FE232738652500756D53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

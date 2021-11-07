@@ -19,6 +19,10 @@ struct CalendarHelper {
         7: "Sabato"
     ]
 
+    static var currentDay: WeekDay {
+        daysOfCurrentWeek[currentDayIndex]
+    }
+    
     static var currentDayIndex: Int {
         let today = Calendar.current.startOfDay(for: Date())
         let dayOfWeek = Calendar.current.component(.weekday, from: today)
