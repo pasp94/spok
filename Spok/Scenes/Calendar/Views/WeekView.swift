@@ -10,20 +10,20 @@ import SwiftUI
 struct WeekView: View {
     let days: [WeekDay]
 
-    let layout: [GridItem] = [
+    @State private var selectedWeekDayIndex: Int = 0
+    private let layout: [GridItem] = [
         GridItem(.flexible())
     ]
-
-    @State private var selectedWeekDay: Int = 4
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: layout, spacing: 20) {
-                ForEach(days) {
-                    DayView(
-                        number: $0.number,
-                        day: $0.shortName
-                    )
+                ForEach(0..<days.count, id:\.self) { index in
+                    let day = days[index]
+                    DayView(selected: selectedWeekDayIndex == index, number: day.number, day: day.shortName)
+                        .onTapGesture {
+                            selectedWeekDayIndex = index
+                        }
                 }
             }
             .padding(.horizontal)
@@ -39,25 +39,30 @@ struct WeekView_Previews: PreviewProvider {
 }
 
 struct DayView: View {
-    @State var selected: Bool = false
-
+    var selected: Bool
     let number: Int
     let day: String
 
     var body: some View {
+        let textColor: Color = selected ? .white : .Primary.normal
+        let backgroundColor: Color = selected ? .Primary.light : .white
+        let shadowColor: Color = selected ? .Primary.light : .gray
+
         VStack(spacing: 5.0) {
             Text("\(number)")
                 .font(.system(size: 22))
                 .fontWeight(.heavy)
+                .foregroundColor(textColor)
             Text(day)
                 .font(.system(size: 14))
                 .fontWeight(.regular)
+                .foregroundColor(textColor)
         }
         .padding(.vertical, 30)
         .padding(.horizontal, 18)
-        .background(Color.white)
+        .background(backgroundColor)
         .cornerRadius(.infinity)
-        .shadow(radius: 10)
+        .shadow(color: shadowColor, radius: 10)
     }
 }
 

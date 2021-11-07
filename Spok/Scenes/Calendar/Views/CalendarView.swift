@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CalendarView: View {
+
+    @State var selectedDay: WeekDay?
+
     private let days = DAYS
     private let reminders: [Reminder] = Network.getReminders()
 
@@ -22,8 +25,6 @@ struct CalendarView: View {
             }
             .navigationTitle(
                 Text("Questa settimana")
-                    .font(.largeTitle)
-                    .foregroundColor(.black)
             )
         }
     }
@@ -42,7 +43,7 @@ struct DailyRemindersView: View {
     var body: some View {
         VStack(spacing: 12) {
             ForEach(reminders) { rem in
-                ReminderView(title: rem.name)
+                SpotReminderView(title: rem.name)
             }
         }
         .padding()
