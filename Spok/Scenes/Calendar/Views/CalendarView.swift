@@ -9,10 +9,12 @@ import SwiftUI
 
 struct CalendarView: View {
 
-    @State var selectedDay: WeekDay?
-
     private let days = DAYS
-    private let reminders: [Reminder] = Network.getReminders()
+    private lazy var reminders: [[Reminder]] =  days.map { _ in
+        Network.getReminders()
+    }
+
+    @State var selectedDay: WeekDay?
 
     var body: some View {
         NavigationView {
@@ -20,13 +22,23 @@ struct CalendarView: View {
                 ScrollView(.vertical) {
                     WeekView(days: days)
                         .frame(height: geometry.size.height * 0.25)
-                    DailyRemindersView(reminders: reminders)
+                    DailyRemindersView(reminders: Network.getReminders())
                 }
             }
             .navigationTitle(
                 Text("Questa settimana")
             )
         }
+    }
+
+    var remindersForSelectedDay: [Reminder] {
+        var mutableSelf = self
+        guard let selectedDay = selectedDay,
+              let index = days.firstIndex(of: selectedDay)
+        else {
+            return []
+        }
+        return mutableSelf.reminders[index]
     }
 }
 
@@ -41,9 +53,15 @@ struct DailyRemindersView: View {
     let reminders: [Reminder]
 
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 24) {
             ForEach(reminders) { rem in
-                SpotReminderView(title: rem.name)
+                Group {
+                    if rem.type == .spot {
+                        SpotReminderView(title: rem.name)
+                    } else {
+                        SessionReminderView()
+                    }
+                }
             }
         }
         .padding()

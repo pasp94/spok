@@ -11,9 +11,7 @@ struct WeekView: View {
     let days: [WeekDay]
 
     @State private var selectedWeekDayIndex: Int = 0
-    private let layout: [GridItem] = [
-        GridItem(.flexible())
-    ]
+    private let layout: [GridItem] = [GridItem(.flexible())]
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -65,22 +63,3 @@ struct DayView: View {
         .shadow(color: shadowColor, radius: 10)
     }
 }
-
-
-struct WeekDay: Identifiable {
-    let id: UUID = UUID()
-    let number: Int
-    let name: String
-
-    var shortName: String { name.prefix(3).capitalized }
-}
-
-let DAYS = [
-    WeekDay(number: 1, name: "Lunedi"),
-    WeekDay(number: 2, name: "Martedì"),
-    WeekDay(number: 3, name: "Mercoledì"),
-    WeekDay(number: 4, name: "Giovedì"),
-    WeekDay(number: 5, name: "Venerdì"),
-    WeekDay(number: 6, name: "Sabato"),
-    WeekDay(number: 7, name: "Domenica")
-]

@@ -20,6 +20,7 @@
 		EF208E822736F1600002460D /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E812736F1600002460D /* CounterView.swift */; };
 		EF208E8427373CA90002460D /* SessionReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8327373CA90002460D /* SessionReminderView.swift */; };
 		EF208E88273752450002460D /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E87273752450002460D /* Color+.swift */; };
+		EF208E8B2737E7AD0002460D /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8A2737E7AD0002460D /* WeekDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EF208E812736F1600002460D /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		EF208E8327373CA90002460D /* SessionReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionReminderView.swift; sourceTree = "<group>"; };
 		EF208E87273752450002460D /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		EF208E8A2737E7AD0002460D /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		BCB8FDEA2735D62400756D53 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EF208E892737E77B0002460D /* Models */,
 				EF208E762735D93C0002460D /* Calendar */,
 				BCB8FDEC2735D6FE00756D53 /* Main */,
 			);
@@ -190,6 +193,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EF208E892737E77B0002460D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF208E8A2737E7AD0002460D /* WeekDay.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +275,7 @@
 				EF208E7B2735EC250002460D /* WeekView.swift in Sources */,
 				EF208E88273752450002460D /* Color+.swift in Sources */,
 				EF208E782735DA4A0002460D /* CalendarView.swift in Sources */,
+				EF208E8B2737E7AD0002460D /* WeekDay.swift in Sources */,
 				BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */,
 				BC6FCF052735AC1700331611 /* ContentView.swift in Sources */,
 				BCB8FDE92735D32100756D53 /* Network.swift in Sources */,
