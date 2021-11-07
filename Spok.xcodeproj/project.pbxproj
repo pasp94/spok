@@ -17,8 +17,6 @@
 		EF208E7B2735EC250002460D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7A2735EC250002460D /* WeekView.swift */; };
 		EF208E7F2736DB470002460D /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7E2736DB470002460D /* ReminderView.swift */; };
 		EF208E822736F1600002460D /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E812736F1600002460D /* CounterView.swift */; };
-		BCB8FDF227368B7900756D53 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDF127368B7900756D53 /* CounterView.swift */; };
-		BCB8FDF52736E95500756D53 /* ExerciseHList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDF42736E95500756D53 /* ExerciseHList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +31,6 @@
 		EF208E7A2735EC250002460D /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		EF208E7E2736DB470002460D /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 		EF208E812736F1600002460D /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
-		BCB8FDF127368B7900756D53 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
-		BCB8FDF42736E95500756D53 /* ExerciseHList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseHList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,28 +145,16 @@
 				EF208E772735DA4A0002460D /* CalendarView.swift */,
 				EF208E7A2735EC250002460D /* WeekView.swift */,
 				EF208E7E2736DB470002460D /* ReminderView.swift */,
-				BCB8FDF32736E58400756D53 /* ExerciseHList */,
-				BCB8FDF0273689CB00756D53 /* Counter */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
 		EF208E802736F1600002460D /* Counter */ = {
-		BCB8FDF0273689CB00756D53 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
 				EF208E812736F1600002460D /* CounterView.swift */,
-				BCB8FDF127368B7900756D53 /* CounterView.swift */,
 			);
 			path = Counter;
-			sourceTree = "<group>";
-		};
-		BCB8FDF32736E58400756D53 /* ExerciseHList */ = {
-			isa = PBXGroup;
-			children = (
-				BCB8FDF42736E95500756D53 /* ExerciseHList.swift */,
-			);
-			path = ExerciseHList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +231,6 @@
 				EF208E782735DA4A0002460D /* CalendarView.swift in Sources */,
 				BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */,
 				BC6FCF052735AC1700331611 /* ContentView.swift in Sources */,
-				BCB8FDF52736E95500756D53 /* ExerciseHList.swift in Sources */,
 				BCB8FDE92735D32100756D53 /* Network.swift in Sources */,
 				EF208E7F2736DB470002460D /* ReminderView.swift in Sources */,
 				BC6FCF032735AC1700331611 /* SpokApp.swift in Sources */,
