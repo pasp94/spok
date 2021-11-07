@@ -21,6 +21,7 @@
 		EF208E8427373CA90002460D /* SessionReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8327373CA90002460D /* SessionReminderView.swift */; };
 		EF208E88273752450002460D /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E87273752450002460D /* Color+.swift */; };
 		EF208E8B2737E7AD0002460D /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8A2737E7AD0002460D /* WeekDay.swift */; };
+		EF208E8D2738593F0002460D /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E8C2738593F0002460D /* CalendarHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		EF208E8327373CA90002460D /* SessionReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionReminderView.swift; sourceTree = "<group>"; };
 		EF208E87273752450002460D /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		EF208E8A2737E7AD0002460D /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		EF208E8C2738593F0002460D /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +73,12 @@
 		BC6FCF012735AC1700331611 /* Spok */ = {
 			isa = PBXGroup;
 			children = (
-				EF208E85273752130002460D /* Utils */,
 				BC6FCF022735AC1700331611 /* SpokApp.swift */,
 				BCB8FDE42735D04700756D53 /* Network */,
 				BC6FCF082735AC1B00331611 /* Preview Content */,
 				BCB8FDEB2735D6A500756D53 /* Resources */,
 				BCB8FDEA2735D62400756D53 /* Scenes */,
+				EF208E85273752130002460D /* Utils */,
 			);
 			path = Spok;
 			sourceTree = "<group>";
@@ -180,6 +182,7 @@
 		EF208E85273752130002460D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EF208E8E27385F080002460D /* Helpers */,
 				EF208E86273752230002460D /* Extensions */,
 			);
 			path = Utils;
@@ -199,6 +202,14 @@
 				EF208E8A2737E7AD0002460D /* WeekDay.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EF208E8E27385F080002460D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF208E8C2738593F0002460D /* CalendarHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 				EF208E8B2737E7AD0002460D /* WeekDay.swift in Sources */,
 				BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */,
 				BC6FCF052735AC1700331611 /* ContentView.swift in Sources */,
+				EF208E8D2738593F0002460D /* CalendarHelper.swift in Sources */,
 				BCB8FDE92735D32100756D53 /* Network.swift in Sources */,
 				EF208E7F2736DB470002460D /* SpotReminderView.swift in Sources */,
 				BC6FCF032735AC1700331611 /* SpokApp.swift in Sources */,
