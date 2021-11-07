@@ -17,7 +17,7 @@ struct ContentView: View {
             GeometryReader { geometry in
                 ScrollView(.vertical, showsIndicators: false) {
                     ExerciseHList()
-                        .frame(height: geometry.size.height * 0.40)
+                        .frame(height: 200)
                     DailyRemindersView(reminders: reminders)
                 }
             }
@@ -42,6 +42,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
