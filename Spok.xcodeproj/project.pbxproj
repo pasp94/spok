@@ -13,6 +13,7 @@
 		BC6FCF0A2735AC1B00331611 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6FCF092735AC1B00331611 /* Preview Assets.xcassets */; };
 		BCB8FDE72735D0C000756D53 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE62735D0C000756D53 /* Reminder.swift */; };
 		BCB8FDE92735D32100756D53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDE82735D32100756D53 /* Network.swift */; };
+		BCB8FDF92737EBEC00756D53 /* ExerciseHList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB8FDF82737EBEC00756D53 /* ExerciseHList.swift */; };
 		EF208E782735DA4A0002460D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E772735DA4A0002460D /* CalendarView.swift */; };
 		EF208E7B2735EC250002460D /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7A2735EC250002460D /* WeekView.swift */; };
 		EF208E7F2736DB470002460D /* SpotReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF208E7E2736DB470002460D /* SpotReminderView.swift */; };
@@ -29,6 +30,7 @@
 		BC6FCF092735AC1B00331611 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCB8FDE62735D0C000756D53 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		BCB8FDE82735D32100756D53 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BCB8FDF82737EBEC00756D53 /* ExerciseHList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseHList.swift; sourceTree = "<group>"; };
 		EF208E772735DA4A0002460D /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		EF208E7A2735EC250002460D /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		EF208E7E2736DB470002460D /* SpotReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReminderView.swift; sourceTree = "<group>"; };
@@ -131,9 +133,18 @@
 		BCB8FDEF2735D73900756D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8FDF72737EBEC00756D53 /* ExerciseHList */,
 				EF208E802736F1600002460D /* Counter */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BCB8FDF72737EBEC00756D53 /* ExerciseHList */ = {
+			isa = PBXGroup;
+			children = (
+				BCB8FDF82737EBEC00756D53 /* ExerciseHList.swift */,
+			);
+			path = ExerciseHList;
 			sourceTree = "<group>";
 		};
 		EF208E762735D93C0002460D /* Calendar */ = {
@@ -249,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB8FDF92737EBEC00756D53 /* ExerciseHList.swift in Sources */,
 				EF208E7B2735EC250002460D /* WeekView.swift in Sources */,
 				EF208E88273752450002460D /* Color+.swift in Sources */,
 				EF208E782735DA4A0002460D /* CalendarView.swift in Sources */,

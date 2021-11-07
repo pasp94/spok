@@ -13,7 +13,7 @@ struct CounterView: View {
             Image(systemName: "hand.thumbsup.fill")
                 .foregroundColor(Color.white)
                 .padding(.vertical)
-                .frame(width: 50, height: 120)
+                .frame(width: 50, height: 80)
                 .font(.system(size: 50))
             HStack {
                 VStack(alignment: .leading) {
@@ -33,7 +33,7 @@ struct CounterView: View {
             }
         }
         .padding(.horizontal, 20)
-        .frame(width: 210, height: 220)
+        .frame(width: 150, height: 170)
         .background(Color.yellow)
         .cornerRadius(20)
     }
