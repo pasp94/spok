@@ -19,10 +19,6 @@ struct ContentView: View {
                     ExerciseHList()
                         .frame(height: geometry.size.height * 0.30)
                         .padding(.leading, 20)
-                    Text("Percentuale Esercizi Spot Fatti: 70%")
-                    Text("Esercizi di oggi")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
                         
                     DailyRemindersView(reminders: reminders)
                 }
@@ -31,8 +27,11 @@ struct ContentView: View {
             .navigationTitle("Esercizi Spot")
             .navigationBarItems(
                 leading: HStack {
-                    Image(systemName: "square.grid.2x2")
-                        .font(.title3)
+                    NavigationLink(destination: CalendarView()) {
+                        Image(systemName: "square.grid.2x2")
+                            .font(.title3)
+                            .foregroundColor(.black)
+                    }
                     Text("Spok")
                         .font(.title2)
                         .bold()
